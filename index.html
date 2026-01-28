@@ -3,220 +3,169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>YZY Studio</title>
+    <title>NordWood Atelier | Premium Wood Solutions</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header class="hero">
-      <nav class="nav">
-        <span class="logo">YZY Studio</span>
-        <div class="nav-links">
-          <a href="#kolekcja">Kolekcja</a>
-          <a href="#archiwum">Archiwum</a>
-          <a href="#kontakt">Kontakt</a>
+      <div class="topbar">
+        <span class="badge">Premium Wood Studio</span>
+        <div class="lang-switch" data-lang-switch>
+          <button type="button" class="active" data-lang="pl">PL</button>
+          <button type="button" data-lang="en">EN</button>
         </div>
-        <button class="pill-button">Kup teraz</button>
+      </div>
+      <nav class="nav">
+        <span class="logo">NordWood Atelier</span>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="offer.html">Oferta</a>
+          <a href="projects.html">Realizacje</a>
+          <a href="about.html">O nas</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+        <a class="pill-button" href="contact.html">Bezpłatna konsultacja</a>
       </nav>
       <div class="hero-grid">
         <div class="hero-content">
-          <p class="eyebrow">DROP 01 / 2024</p>
-          <h1>Minimalizm, dźwięk i sylwetka w jednym miejscu.</h1>
-          <p class="lead">
-            Limitowane kapsuły odzieżowe, dźwiękowe instalacje i obiekty dla
-            kolekcjonerów. Wszystko zaprojektowane z myślą o prostocie oraz
-            odważnej formie.
+          <p class="eyebrow" data-i18n="heroEyebrow">
+            Naturalne rozwiązania dla przemysłu drzewnego
+          </p>
+          <h1 data-i18n="heroTitle">
+            Projektujemy i dostarczamy nowoczesne systemy dla branży drzewnej.
+          </h1>
+          <p class="lead" data-i18n="heroLead">
+            Specjalizujemy się w konstrukcjach, pojazdach i rozwiązaniach
+            transportowych dla surowca oraz w wyposażeniu zaplecza produkcyjnego.
           </p>
           <div class="hero-actions">
-            <button class="primary">Zobacz drop</button>
-            <button class="ghost">Posłuchaj manifestu</button>
+            <a class="primary" href="offer.html" data-i18n="heroPrimary">
+              Poznaj ofertę
+            </a>
+            <a class="ghost" href="projects.html" data-i18n="heroGhost">
+              Zobacz realizacje
+            </a>
           </div>
           <div class="stats">
             <div>
-              <strong>48h</strong>
-              <span>Okno zakupu</span>
+              <strong>20+</strong>
+              <span data-i18n="heroStatOne">Lat doświadczenia</span>
+            </div>
+            <div>
+              <strong>180</strong>
+              <span data-i18n="heroStatTwo">Zrealizowanych projektów</span>
             </div>
             <div>
               <strong>12</strong>
-              <span>Ręcznych obiektów</span>
-            </div>
-            <div>
-              <strong>4</strong>
-              <span>Strefy odsłuchowe</span>
+              <span data-i18n="heroStatThree">Krajów współpracy</span>
             </div>
           </div>
         </div>
         <div class="hero-visual">
           <div class="visual-card">
-            <span>Look 01</span>
-            <strong>Nomad Shell</strong>
+            <span data-i18n="heroTileOneTag">Transport</span>
+            <strong data-i18n="heroTileOneTitle">Pojazdy do surowca</strong>
           </div>
           <div class="visual-card accent">
-            <span>Sound</span>
-            <strong>Ambient Suite</strong>
+            <span data-i18n="heroTileTwoTag">Technologia</span>
+            <strong data-i18n="heroTileTwoTitle">Linie i zabudowy</strong>
           </div>
           <div class="visual-card tall">
-            <span>Object</span>
-            <strong>Concrete Skin</strong>
+            <span data-i18n="heroTileThreeTag">Projekt</span>
+            <strong data-i18n="heroTileThreeTitle">Konstrukcje premium</strong>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="kolekcja" class="section collection">
+      <section class="section highlight">
         <div class="section-heading">
-          <h2>Kolekcja</h2>
-          <p>
-            Trzy filary: odzież, dźwięk i przestrzeń. Każdy element jest edycją
-            limitowaną, podpisaną i numerowaną.
+          <h2 data-i18n="homeIntroTitle">Kompleksowa obsługa branży drzewnej</h2>
+          <p data-i18n="homeIntroLead">
+            Od koncepcji, przez projekt, po wdrożenie i serwis. Dostarczamy
+            rozwiązania dla tartaków, zakładów prefabrykacji i firm transportowych.
           </p>
         </div>
-        <div class="collection-grid">
-          <article class="card">
-            <h3>Uniform 01</h3>
-            <p>Warstwowe sylwetki z technicznych tkanin i surowej bawełny.</p>
-            <span class="meta">16 sztuk</span>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3 data-i18n="homeFeatureOneTitle">Doradztwo i projekt</h3>
+            <p data-i18n="homeFeatureOneCopy">
+              Analizujemy procesy i projektujemy systemy zwiększające wydajność
+              produkcji.
+            </p>
           </article>
-          <article class="card">
-            <h3>Sound Room</h3>
-            <p>Analogowe pejzaże dźwiękowe, miksowane na żywo w studiu.</p>
-            <span class="meta">Stream &amp; vinyl</span>
+          <article class="feature-card">
+            <h3 data-i18n="homeFeatureTwoTitle">Produkcja i wdrożenie</h3>
+            <p data-i18n="homeFeatureTwoCopy">
+              Realizujemy zamówienia z pełną kontrolą jakości i logistyki.
+            </p>
           </article>
-          <article class="card">
-            <h3>Object 03</h3>
-            <p>Rzeźbiarskie formy inspirowane architekturą brutalistyczną.</p>
-            <span class="meta">Pre-order</span>
-          </article>
-        </div>
-        <div class="drop-grid">
-          <article class="drop">
-            <div class="drop-image">
-              <span>Drop 01</span>
-            </div>
-            <div class="drop-info">
-              <h3>YZY Uniform Shell</h3>
-              <p>Oversize, techniczny nylon, ręczne barwienie.</p>
-              <div class="price-row">
-                <span>1600 PLN</span>
-                <button>Dodaj</button>
-              </div>
-            </div>
-          </article>
-          <article class="drop">
-            <div class="drop-image warm">
-              <span>Drop 01</span>
-            </div>
-            <div class="drop-info">
-              <h3>Studio Hooded Cape</h3>
-              <p>Matowa tkanina i głęboki kaptur z ukrytym zapięciem.</p>
-              <div class="price-row">
-                <span>2100 PLN</span>
-                <button>Dodaj</button>
-              </div>
-            </div>
-          </article>
-          <article class="drop">
-            <div class="drop-image light">
-              <span>Drop 01</span>
-            </div>
-            <div class="drop-info">
-              <h3>Sound Room Vinyl</h3>
-              <p>Limitowana płyta + dostęp do prywatnego streamu.</p>
-              <div class="price-row">
-                <span>420 PLN</span>
-                <button>Dodaj</button>
-              </div>
-            </div>
+          <article class="feature-card">
+            <h3 data-i18n="homeFeatureThreeTitle">Serwis i opieka</h3>
+            <p data-i18n="homeFeatureThreeCopy">
+              Zapewniamy pełne wsparcie posprzedażowe oraz modernizacje linii.
+            </p>
           </article>
         </div>
       </section>
 
-      <section class="section manifesto">
-        <div class="manifesto-grid">
+      <section class="section values">
+        <div class="values-grid">
           <div>
-            <p class="eyebrow">Manifest</p>
-            <h2>Nie szukamy hałasu, tworzymy przestrzeń.</h2>
-            <p>
-              Studio YZY to eksperymentalna marka skoncentrowana na ciszy,
-              rytmie i surowej formie. Każdy drop jest opowieścią opisaną
-              materiałem, dźwiękiem i światłem.
+            <p class="eyebrow" data-i18n="homeValuesEyebrow">Dlaczego my</p>
+            <h2 data-i18n="homeValuesTitle">Premium jakość i naturalne materiały</h2>
+            <p data-i18n="homeValuesCopy">
+              Łączymy nowoczesne technologie z estetyką drewna. Każdy projekt
+              podkreśla zrównoważony charakter i trwałość inwestycji.
             </p>
           </div>
           <div class="quote-card">
-            <p>
-              “To nie jest moda, to architektura dla ciała. Nie jest muzyką,
-              tylko przestrzenią do słuchania.”
+            <p data-i18n="homeValuesQuote">
+              “Nasze realizacje to połączenie precyzji inżynierii i szacunku do
+              natury.”
             </p>
-            <span>Dyrektor kreatywny</span>
+            <span data-i18n="homeValuesAuthor">Dyrektor techniczny</span>
           </div>
         </div>
       </section>
 
-      <section id="archiwum" class="section archive">
-        <div class="archive-grid">
+      <section class="section cta">
+        <div class="cta-card">
           <div>
-            <h2>Archiwum</h2>
-            <p>
-              Przegląd wcześniejszych dropów, backstage oraz limitowanych
-              współprac. Zapisz się, aby uzyskać dostęp do prywatnych materiałów
-              studyjnych.
+            <h2 data-i18n="homeCtaTitle">Zapytaj o indywidualną wycenę</h2>
+            <p data-i18n="homeCtaCopy">
+              Przygotujemy dla Ciebie propozycję projektu, harmonogram i
+              kosztorys.
             </p>
-            <form class="signup">
-              <input type="email" placeholder="Twój email" aria-label="Email" />
-              <button type="submit">Dołącz</button>
-            </form>
           </div>
-          <div class="archive-panels">
-            <div class="panel">
-              <span>Drop 00</span>
-              <strong>Archive Film</strong>
-            </div>
-            <div class="panel">
-              <span>Installation</span>
-              <strong>Concrete Hymn</strong>
-            </div>
-            <div class="panel">
-              <span>Atelier</span>
-              <strong>Night Session</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section gallery">
-        <div class="section-heading">
-          <h2>Lookbook</h2>
-          <p>Fotogramy, które budują atmosferę dropu. Surowe światło i cisza.</p>
-        </div>
-        <div class="gallery-grid">
-          <div class="gallery-tile large">Frame 01</div>
-          <div class="gallery-tile">Frame 02</div>
-          <div class="gallery-tile">Frame 03</div>
-          <div class="gallery-tile tall">Frame 04</div>
+          <a class="primary" href="contact.html" data-i18n="homeCtaButton">
+            Skontaktuj się
+          </a>
         </div>
       </section>
     </main>
 
-    <footer id="kontakt" class="footer">
+    <footer class="footer">
       <div>
-        <h2>Kontakt</h2>
-        <p>
-          Studio YZY to miejsce dla twórców, kolekcjonerów i fanów czystej
-          estetyki. Napisz do nas, aby otrzymać ofertę lub zaproszenie na
-          pokaz.
+        <h2 data-i18n="footerTitle">NordWood Atelier</h2>
+        <p data-i18n="footerCopy">
+          Premium rozwiązania dla przemysłu drzewnego oraz transportu surowca.
         </p>
       </div>
       <div class="footer-links">
-        <a href="mailto:studio@yzy.com">studio@yzy.com</a>
-        <a href="#">Instagram</a>
-        <a href="#">Soundcloud</a>
+        <a href="mailto:kontakt@nordwood.pl">kontakt@nordwood.pl</a>
+        <span>+48 555 123 456</span>
+        <span>Gdańsk · Warszawa · Hamburg</span>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
