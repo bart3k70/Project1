@@ -56,6 +56,13 @@ a {
   letter-spacing: 0.2em;
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 48px;
+  align-items: center;
+}
+
 .hero-content {
   max-width: 680px;
   display: flex;
@@ -84,6 +91,67 @@ a {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.stats div {
+  background: #111111;
+  border: 1px solid #242424;
+  border-radius: 16px;
+  padding: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.stats strong {
+  font-size: 1.4rem;
+}
+
+.stats span {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #bdbdbd;
+}
+
+.hero-visual {
+  display: grid;
+  gap: 18px;
+}
+
+.visual-card {
+  border: 1px solid #2a2a2a;
+  border-radius: 20px;
+  padding: 24px;
+  min-height: 140px;
+  background: linear-gradient(140deg, #101010, #191919);
+  display: grid;
+  gap: 12px;
+}
+
+.visual-card span {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: #a9a9a9;
+}
+
+.visual-card strong {
+  font-size: 1.2rem;
+}
+
+.visual-card.accent {
+  background: linear-gradient(140deg, #1c1c1c, #2b2b2b);
+}
+
+.visual-card.tall {
+  min-height: 200px;
 }
 
 button {
@@ -127,6 +195,71 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
+}
+
+.drop-grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.drop {
+  border: 1px solid #252525;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #101010;
+  display: grid;
+  grid-template-rows: 180px 1fr;
+}
+
+.drop-image {
+  background: linear-gradient(150deg, #1b1b1b, #0a0a0a);
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #cfcfcf;
+}
+
+.drop-image.warm {
+  background: linear-gradient(150deg, #2a2320, #0a0a0a);
+}
+
+.drop-image.light {
+  background: linear-gradient(150deg, #1f1f1f, #343434);
+}
+
+.drop-info {
+  padding: 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.drop-info h3 {
+  font-size: 1.2rem;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.price-row button {
+  border: 1px solid #3a3a3a;
+  background: transparent;
+  color: #f5f5f5;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
 }
 
 .card {
@@ -192,6 +325,34 @@ button {
   gap: 16px;
 }
 
+.manifesto {
+  background: #0b0b0b;
+}
+
+.manifesto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  align-items: center;
+}
+
+.quote-card {
+  border: 1px solid #272727;
+  border-radius: 18px;
+  padding: 28px;
+  background: #151515;
+  display: grid;
+  gap: 20px;
+  font-size: 1.05rem;
+}
+
+.quote-card span {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: #a8a8a8;
+}
+
 .panel {
   border: 1px solid #272727;
   padding: 20px;
@@ -225,6 +386,39 @@ button {
   font-size: 0.95rem;
 }
 
+.gallery {
+  background: #0a0a0a;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.gallery-tile {
+  border-radius: 16px;
+  border: 1px solid #232323;
+  background: linear-gradient(135deg, #141414, #1f1f1f);
+  min-height: 180px;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: #bdbdbd;
+}
+
+.gallery-tile.large {
+  min-height: 260px;
+  grid-column: span 2;
+}
+
+.gallery-tile.tall {
+  min-height: 260px;
+}
+
 @media (max-width: 720px) {
   .nav {
     flex-direction: column;
@@ -233,5 +427,9 @@ button {
 
   .nav-links {
     flex-wrap: wrap;
+  }
+
+  .gallery-tile.large {
+    grid-column: span 1;
   }
 }
